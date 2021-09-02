@@ -27,7 +27,7 @@ public class TestServiceGame {
     public void testeGamesWii(){
         List<Games> WiiGames = ServiceGame.getListByPlatform(gameList, Platform.Wii);
 
-        Assert.assertNotEquals(23,WiiGames.size());
+        Assert.assertEquals(15,WiiGames.size());
     }
 
     @Test
